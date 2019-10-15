@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Register Form</title>
+</head>
+<body>
+	<form action="2nd_page.php" method="POST" enctype="multipart/form-data">
+	<table>
+		<tr>
+			<td>
+				Name :
+			</td>
+			<td>
+				<input type="text" placeholder="Name" name="username" required>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				Password :
+			</td>
+			<td>
+				<input type="password" placeholder="Password" name="password" required>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				Gender :
+			</td>
+			<td>
+				<input type="radio" name="gender" value="m" required>Male
+				<input type="radio" name="gender"value="f"required>Female
+			</td>
+		</tr>
+		<tr>
+			<td>
+				Email :
+			</td>
+			<td>
+				<input type="mail" placeholder="Email" name="email" required>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				Phone no. :
+			</td>
+			<td>
+				<select name="phonecode" required>
+					<option selected hidden value="">Select Code</option>
+					<option value="+87">+87</option>
+					<option value="+99">+99</option>
+					<option value="+91">+91</option>
+					<option value="+76">+76</option>
+					<option value="+09">+09</option>
+					<option value="+34">+34</option>
+				</select>
+				<input type="phone" placeholder="9876******" name="phone" required>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<input type="Submit" value="Submit" name="">
+			</td>
+		</tr>
+	</table>
+</form>
+</body>
+</html>
